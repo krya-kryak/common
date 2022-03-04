@@ -53,6 +53,26 @@ const (
 	// timeout used to scrape a target.
 	ScrapeTimeoutLabel = "__scrape_timeout__"
 
+	// SampleLimitLabel is the name of the label that holds
+	// the limit on number of labels that will be accepted for a sample.
+	SampleLimitLabel = "__sample_limit__"
+
+	// LabelLimitLabel is the name of the label that holds the sample limit
+	// used to scrape a target.
+	LabelLimitLabel = "__label_limit__"
+
+	// LabelNameLengthLimitLabel is the name of the label that holds
+	// the limit on length of labels name used to scrape a target.
+	LabelNameLengthLimitLabel = "__label_name_length_limit__"
+
+	// LabelValueLengthLimitLabel is the name of the label that holds
+	// the limit for length of labels value used to scrape a target.
+	LabelValueLengthLimitLabel = "__label_value_length_limit__"
+
+	// BodySizeLabel is the name of the label
+	// that holds the upper limit on uncompressed response body.
+	BodySizeLimitLabel = "__body_size_limit__"
+
 	// ReservedLabelPrefix is a prefix which is not legal in user-supplied
 	// label names.
 	ReservedLabelPrefix = "__"
